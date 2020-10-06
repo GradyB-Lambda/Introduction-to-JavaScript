@@ -168,12 +168,14 @@ Use the game function below to do the following:
 */
 
 var compChoice = Math.random();
-function game(userChioce, compChoice){
-  if (compChioce < .34){
+function game(userChoice, compChoice){
+  if (compChoice < .34){
     compChoice = 'rock';
-  }else if (compChoice <= .67){
+  }
+  else if (compChoice <= .67){
     compChoice = 'paper';
-  }else {compChoice = 'scissor'}
+  }
+  else {compChoice = 'scissor'}
   
   if (userChoice === compChoice){
     return "it's a tie";
@@ -181,15 +183,16 @@ function game(userChioce, compChoice){
     return 'you win';
   }else if (userChoice === 'paper' && compChoice === 'rock'){
     return 'you win';
-  }else if (userChioce === 'scissor' && compChoice === 'paper'){
+  }else if (userChoice === 'scissor' && compChoice === 'paper'){
     return 'you win';
-  }else if (userChioce === 'rock' && compChoice === 'paper'){
-    return 'you lose!';
+  }else if (userChoice === 'rock' && compChoice === 'paper'){
+    return 'you lose';
   }else if (userChoice === 'paper' && compChoice === 'scissors'){
-    return 'you lose!';
-  }else if (userChoice === 'scissor' && compChoice === 'rock')
+    return 'you lose';
+  }else  {userChoice === 'scissor' && compChoice === 'rock'}
 }
   
+console.log(game('rock'))  
   
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -236,10 +239,7 @@ Using the annoyingSong function below do the following:
 */
 
 // function annoyingSong(number){
-//   while(number < 99){
-//     console.log(`$(number) bottles of soda on the wall, $(number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`)
-//     i--
-//   } 
+
 //   }
 
 
@@ -271,8 +271,9 @@ function grade(scoreOutofOneHundred){
   }else {console.log('F')}
     /*add your code here*/
   }
-  
+  console.log(grade(90))
   grade(90)
+  
   
   
   
