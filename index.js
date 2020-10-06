@@ -167,11 +167,28 @@ Use the game function below to do the following:
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
 
-// function game(rockPaperScissors){
-//   return Math.random()
-//     /*add your code here*/
-// }
-// console.log(game)
+var compChoice = Math.random();
+function game(userChioce, compChoice){
+  if (compChioce < .34){
+    compChoice = 'rock';
+  }else if (compChoice <= .67){
+    compChoice = 'paper';
+  }else {compChoice = 'scissor'}
+  
+  if (userChoice === compChoice){
+    return "it's a tie";
+  }else if (userChoice === 'rock' && compChoice === 'scissor'){
+    return 'you win';
+  }else if (userChoice === 'paper' && compChoice === 'rock'){
+    return 'you win';
+  }else if (userChioce === 'scissor' && compChoice === 'paper'){
+    return 'you win';
+  }else if (userChioce === 'rock' && compChoice === 'paper'){
+    return 'you lose!';
+  }else if (userChoice === 'paper' && compChoice === 'scissors'){
+    return 'you lose!';
+  }else if (userChoice === 'scissor' && compChoice === 'rock')
+}
   
   
 
@@ -281,19 +298,22 @@ Using the vowelCounter function below do the following:
 
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
-// function foo(){
-//     console.log('its working');
-//     return 'bar';
-// }
+
+function foo(){
+    console.log('its working');
+    return 'bar';
+}
+
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Don't touch the code after this line! 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
-// export default{
-//     foo,
-//     multiply,
-//     dogYears,
-//     hungryDog,
-//     game,
-//     miles,
-//     feet,
-//     annoyingSong,
-//     grade
-// }
+
+export default{
+    foo,
+    multiply,
+    dogYears,
+    hungryDog,
+    game,
+    miles,
+    feet,
+    annoyingSong,
+    grade
+}
