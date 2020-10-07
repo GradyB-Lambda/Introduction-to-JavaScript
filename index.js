@@ -227,6 +227,29 @@ console.log(feet(30.48))
 feet(30.48)
  
 
+
+/*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
+
+// Let's Sing 99 Bottles of Soda on the Wall!
+/*
+Using the annoyingSong function below do the following:
+  1. Receive a starting number and start to count down from the number received 
+  2. At each iteration, it should return this string: 
+      "(number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall"
+*/
+
+function annoyingSong(number){
+  let count = 100;
+  while (count > 0){
+    console.log(count);
+    count -=1;
+  }
+
+  }
+
+
+
+
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
 //Grade Calculator
@@ -282,14 +305,11 @@ Using the vowelCounter function below do the following:
 
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
-
 function foo(){
     console.log('its working');
     return 'bar';
 }
-
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Don't touch the code after this line! 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
-
 export default{
     foo,
     multiply,
