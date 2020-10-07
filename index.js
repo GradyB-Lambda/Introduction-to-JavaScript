@@ -134,8 +134,8 @@ function hungryDog(age,weight){
   } else if(age >=1 && weight <=15){
     return weight * .03;
   } else {
-    weight * .02;
-  }
+    weight * .02}
+    
     if(age < .3333){
     return weight * .1
   } else if (age <.5833){
@@ -146,7 +146,7 @@ function hungryDog(age,weight){
   }
  
 console.log(hungryDog(1,15))
-hungryDog(1,15)
+// hungryDog(1,15)
   
   
   
@@ -226,23 +226,6 @@ function feet(numCentimeter){
 console.log(feet(30.48))
 feet(30.48)
  
-
-
-/*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
-
-// Let's Sing 99 Bottles of Soda on the Wall!
-/*
-Using the annoyingSong function below do the following:
-  1. Receive a starting number and start to count down from the number received 
-  2. At each iteration, it should return this string: 
-      "(number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall"
-*/
-
-// function annoyingSong(number){
-
-//   }
-
-
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
